@@ -85,6 +85,11 @@ export default {
       type: "number",
     },
     {
+      name: "guests",
+      title: "Guests",
+      type: "number",
+    },
+    {
       name: "host",
       title: "Host",
       type: "host",
