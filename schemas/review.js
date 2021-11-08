@@ -9,20 +9,14 @@ export default {
       type: "string",
     },
     {
-      name: "reviewRating",
-      title: "Review Rating",
-      type: "string",
-      options: {
-        list: [
-          { title: "5 Stars", value: "5-stars" },
-          { title: "4 Stars", value: "4-stars" },
-          { title: "3 Stars", value: "3-stars" },
-          { title: "2 Stars", value: "2-stars" },
-          { title: "1 Star", value: "1-stars" },
-        ],
-        layout: "radio",
-      },
+      name: "rating",
+      type: "number",
+      title: "Rating",
+      description: "rate from 1-5",
+      validation: (Rule) => Rule.required().min(1).max(5),
+      layout: "radio",
     },
+
     {
       name: "reviewDate",
       title: "Review Date",

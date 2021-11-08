@@ -28,6 +28,13 @@ export default {
       type: "string",
     },
     {
+      name: "place",
+      title: "Place",
+      description: "Entire the city and country of the location",
+      validate: (Rule) => Rule.required(),
+      type: "string",
+    },
+    {
       name: "location",
       title: "Location",
       type: "geopoint",
@@ -38,13 +45,15 @@ export default {
       type: "string",
       options: {
         list: [
-          { title: "House", value: "house" },
-          { title: "Apartment", value: "apartment" },
-          { title: "Flat", value: "flat" },
-          { title: "Townhouse", value: "townhouse" },
+          { title: "Residential House", value: "Residential house" },
+          { title: "Guest House", value: "Guest house" },
+
+          { title: "Apartment", value: "Apartment" },
+          { title: "Cabin", value: "cabin" },
+          { title: "Town house", value: "Town house" },
           { title: "Condo", value: "condo" },
-          { title: "Bed and Breakfast", value: "Bed and Breakfast" },
-          { title: "Boutique Hotel", value: "Boutique Hotel" },
+          { title: "Bed and Breakfast", value: "Bed and breakfast" },
+          { title: "Room Boutique Hotel", value: " Room boutique hotel" },
         ],
         layout: "radio",
       },
