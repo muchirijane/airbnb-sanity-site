@@ -28,6 +28,13 @@ export default {
       type: "string",
     },
     {
+      name: "place",
+      title: "Place",
+      description: "Entire the city and country of the location",
+      validate: (Rule) => Rule.required(),
+      type: "string",
+    },
+    {
       name: "location",
       title: "Location",
       type: "geopoint",
